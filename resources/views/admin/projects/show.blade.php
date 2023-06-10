@@ -7,7 +7,9 @@
         <a class="btn btn-outline-warning" href="{{ route('admin.projects.edit', $project->slug) }}"> <i
                 class="fa-solid fa-pencil"></i> Modifica</a>
         <p class="py-4"> <span class="fw-bold"> Nome del progetto: </span> {{ $project->description }}</p>
-        <p><span class="fw-bold">tipologia di progetto:</span> {{ $project->type->name }}</p>
+        <p><span class="fw-bold">tipologia di progetto:</span>
+            <td>{{ $project->type ? $project->type->name : 'Nessuna tipologia disponibile' }}</td>
+        </p>
 
 
 

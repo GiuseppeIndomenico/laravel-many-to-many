@@ -35,7 +35,7 @@
                         </th>
                         <td>{{ $project->title }}</td>
                         <td>{{ $project->description }}</td>
-                        <td>{{ $project->type->name }}</td>
+                        <td>{{ $project->type ? $project->type->name : 'Nessuna tipologia disponibile' }}</td>
 
                         <td>
                             <div class="d-flex align-items-center justify-between">

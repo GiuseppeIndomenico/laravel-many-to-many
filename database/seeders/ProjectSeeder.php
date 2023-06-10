@@ -18,44 +18,125 @@ class ProjectSeeder extends Seeder
         /** @var string[][] $projects */
         $projects = [
             [
-                'title' => 'E-commerce Website',
-                'description' => 'Build a fully functional e-commerce website with shopping cart and payment integration.',
+                'title' => 'laravel-many-to-many',
+                'description' => 'Descrizione di laravel-many-to-many',
+
             ],
             [
-                'title' => 'Mobile App Development',
-                'description' => 'Develop a cross-platform mobile app using React Native for iOS and Android devices.',
+                'title' => 'laravel-one-to-many',
+                'description' => 'Descrizione di laravel-one-to-many',
             ],
             [
-                'title' => 'Data Analytics Dashboard',
-                'description' => 'Create an interactive data analytics dashboard to visualize and analyze complex data sets.',
+                'title' => 'laravel-auth',
+                'description' => 'Descrizione di laravel-auth',
             ],
             [
-                'title' => 'Social Media Marketing Campaign',
-                'description' => 'Plan and execute a social media marketing campaign to increase brand awareness and engagement.',
+                'title' => 'laravel-dc-comics',
+                'description' => 'Descrizione di laravel-dc-comics',
             ],
             [
-                'title' => 'Custom Web Application',
-                'description' => 'Build a custom web application tailored to the client\'s specific requirements.',
+                'title' => 'laravel-migration-seeder',
+                'description' => 'Descrizione di laravel-migration-seeder',
             ],
             [
-                'title' => 'UI/UX Design for Mobile App',
-                'description' => 'Design intuitive and visually appealing user interfaces for a mobile app.',
+                'title' => 'laravel-model-controller',
+                'description' => 'Descrizione di laravel-model-controller',
             ],
             [
-                'title' => 'Database Optimization',
-                'description' => 'Optimize the performance and efficiency of a large-scale database system.',
+                'title' => 'laravel-comics',
+                'description' => 'Descrizione di laravel-comics',
             ],
             [
-                'title' => 'Content Management System',
-                'description' => 'Develop a user-friendly CMS for managing website content.',
+                'title' => 'laravel-primi-passi',
+                'description' => 'Descrizione di laravel-primi-passi',
             ],
             [
-                'title' => 'SEO Audit and Optimization',
-                'description' => 'Conduct a comprehensive SEO audit and implement optimization strategies for improved search engine rankings.',
+                'title' => 'php-oop-2',
+                'description' => 'Descrizione di php-oop-2',
             ],
             [
-                'title' => 'Cybersecurity Consulting',
-                'description' => 'Provide expert cybersecurity consulting services to protect sensitive data and mitigate risks.',
+                'title' => 'php-todo-list-json',
+                'description' => 'Descrizione di php-todo-list-json',
+            ],
+            [
+                'title' => 'php-oop-1',
+                'description' => 'Descrizione di php-oop-1',
+            ],
+            [
+                'title' => 'db-university',
+                'description' => 'Descrizione di db-university',
+            ],
+            [
+                'title' => 'db-first',
+                'description' => 'Descrizione di db-first',
+            ],
+            [
+                'title' => 'php-strong-password-generator',
+                'description' => 'Descrizione di php-strong-password-generator',
+            ],
+            [
+                'title' => 'php-hotel',
+                'description' => 'Descrizione di php-hotel',
+            ],
+            [
+                'title' => 'php-badwords',
+                'description' => 'Descrizione di php-badwords',
+            ],
+            [
+                'title' => 'proj-html-vuejs',
+                'description' => 'Descrizione di proj-html-vuejs',
+            ],
+            [
+                'title' => 'vite-boolflix',
+                'description' => 'Descrizione di vite-boolflix',
+            ],
+            [
+                'title' => 'vite-yu-gi-oh',
+                'description' => 'Descrizione di vite-yu-gi-oh',
+            ],
+            [
+                'title' => 'vite-comics',
+                'description' => 'Descrizione di vite-comics',
+            ],
+            [
+                'title' => 'vite-hello-world',
+                'description' => 'Descrizione di vite-hello-world',
+            ],
+            [
+                'title' => 'vue-email-list',
+                'description' => 'Descrizione di vue-email-list',
+            ],
+            [
+                'title' => 'vue-boolzapp',
+                'description' => 'Descrizione di vue-boolzapp',
+            ],
+            [
+                'title' => 'vue-todolist',
+                'description' => 'Descrizione di vue-todolist',
+            ],
+            [
+                'title' => 'vue-slider',
+                'description' => 'Descrizione di vue-slider',
+            ],
+            [
+                'title' => 'vue-hello',
+                'description' => 'Descrizione di vue-hello',
+            ],
+            [
+                'title' => 'js-array-carousel',
+                'description' => 'Descrizione di js-array-carousel',
+            ],
+            [
+                'title' => 'js-es6-icons',
+                'description' => 'Descrizione di js-es6-icons',
+            ],
+            [
+                'title' => 'js-our-team',
+                'description' => 'Descrizione di js-our-team',
+            ],
+            [
+                'title' => 'js-simon',
+                'description' => 'Descrizione di js-simon',
             ],
         ];
 

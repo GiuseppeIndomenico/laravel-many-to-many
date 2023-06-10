@@ -15,16 +15,9 @@ class TypeSeeder extends Seeder
     public function run()
     {
         $types = [
-            'Sito web',
-            'App mobile',
-            'Dashboard analitica',
-            'Campagna di marketing',
-            'Applicazione web personalizzata',
-            'Design UI/UX',
-            'Ottimizzazione del database',
-            'Sistema di gestione dei contenuti',
-            'Audit e ottimizzazione SEO',
-            'Consulenza di sicurezza informatica',
+            'front-end',
+            'back-end',
+            'full-stack',
         ];
 
         foreach ($types as $typeName) {
