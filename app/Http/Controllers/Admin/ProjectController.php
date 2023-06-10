@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use illuminate\Validation\Rule;
 use App\Models\Type;
+use App\Models\Technology;
 
 
 class ProjectController extends Controller
@@ -25,7 +26,8 @@ class ProjectController extends Controller
     public function create()
     {
         $types = Type::all();
-        return view('admin.projects.create', compact('types'));
+        $technologies = Technology::all();
+        return view('admin.projects.create', compact('types', 'technologies'));
     }
 
 
@@ -43,6 +45,9 @@ class ProjectController extends Controller
         $data['slug'] = $slug;
         $project = Project::create($data);
 
+        if ($request->has('technologies')) {
+            $project->technologies()->attach($request->technologies);
+        }
 
         return redirect()->route('admin.projects.show', $project->slug);
     }
@@ -56,8 +61,9 @@ class ProjectController extends Controller
 
     public function edit(Project $project)
     {
+        $technologies = Technology::all();
         $types = Type::all();
-        return view('admin.projects.edit', compact('project', 'types'));
+        return view('admin.projects.edit', compact('project', 'types', 'technologies'));
     }
 
 
@@ -69,7 +75,12 @@ class ProjectController extends Controller
         $data['slug'] = $slug;
 
         $project->update($data);
+        if ($request->has('technologies')) {
+            $project->technologies()->sync($request->technologies);
+        } else {
+            $project->technologies()->sync([]);
 
+        }
         return redirect()->route('admin.projects.show', $project->slug);
     }
 

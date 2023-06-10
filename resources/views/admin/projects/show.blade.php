@@ -8,9 +8,19 @@
                 class="fa-solid fa-pencil"></i> Modifica</a>
         <p class="py-4"> <span class="fw-bold"> Nome del progetto: </span> {{ $project->description }}</p>
         <p><span class="fw-bold">tipologia di progetto:</span>
-            <td>{{ $project->type ? $project->type->name : 'Nessuna tipologia disponibile' }}</td>
+            {{ $project->type ? $project->type->name : 'Nessuna tipologia disponibile' }}
         </p>
 
+        <p><span class="fw-bold">Tech utilizzate:</span>
+
+            @if ($project->technologies && count($project->technologies) > 0)
+                @foreach ($project->technologies as $tech)
+                    <li>
+                        <span class="badge rounded-pill text-bg-info text-light">{{ $tech->name }}</span>
+                    </li>
+                @endforeach
+            @endif
+        </p>
 
 
 

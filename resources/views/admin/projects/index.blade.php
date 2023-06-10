@@ -62,5 +62,6 @@
             @endforeach
         </table>
         {{ $projects->links('pagination::bootstrap-5') }}
+        @include('admin.projects.modal-delete')
     </div>
 @endsection

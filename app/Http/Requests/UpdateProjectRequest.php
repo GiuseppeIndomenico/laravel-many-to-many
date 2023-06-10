@@ -30,6 +30,8 @@ class UpdateProjectRequest extends FormRequest
             'title' => 'required',
             Rule::unique('projects')->ignore($this->project),
             'description' => 'nullable',
+            'type_id' => 'required|exists:types,id',
+            'technologies' => 'nullable|exists:technologies,id',
         ];
     }
     public function messages()
